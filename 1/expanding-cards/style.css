@@ -1,3 +1,4 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 * {
@@ -23,14 +24,17 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* Panel height */
   height: 80vh;
   border-radius: 50px;
   color: #fff;
   cursor: pointer;
+  /* panel in shrink state */
   flex: 0.5;
   margin: 10px;
   position: relative;
-  -webkit-transition: all 700ms ease-in;
+  /* Transition Animation Effect on panel*/
+  transition: all 700ms ease-in;
 }
 
 .panel h3 {
@@ -39,23 +43,29 @@ body {
   bottom: 20px;
   left: 20px;
   margin: 0;
+  /* Initially invisible */
   opacity: 0;
 }
 
+/* panel in full width */
 .panel.active {
   flex: 5;
 }
 
 .panel.active h3 {
+  /* When active make h3 visible */
   opacity: 1;
+  /* Transition Animation Effect on h3 */
   transition: opacity 0.3s ease-in 0.4s;
 }
 
+/* Media Queries - on mobile view*/
 @media (max-width: 480px) {
   .container {
     width: 100vw;
   }
 
+  /* Remove 4th and 5th panels on mobile view */
   .panel:nth-of-type(4),
   .panel:nth-of-type(5) {
     display: none;
