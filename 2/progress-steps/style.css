@@ -1,5 +1,7 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
+/* CSS Variables */
 :root {
   --line-border-fill: #3498db;
   --line-border-empty: #e0e0e0;
@@ -45,6 +47,7 @@ body {
   z-index: -1;
 }
 
+/* Circle linking horizontal progress line */
 .progress {
   background-color: var(--line-border-fill);
   position: absolute;
@@ -54,6 +57,7 @@ body {
   height: 4px;
   width: 0%;
   z-index: -1;
+  /* Transition Animation Effect */
   transition: 0.4s ease;
 }
 
@@ -70,6 +74,7 @@ body {
   transition: 0.4s ease;
 }
 
+/* When active class applied */
 .circle.active {
   border-color: var(--line-border-fill);
 }
