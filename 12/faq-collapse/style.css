@@ -1,3 +1,4 @@
+/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 * {
@@ -27,6 +28,7 @@ h1 {
   padding: 30px;
   position: relative;
   overflow: hidden;
+  /* Transition Animation Effect*/
   transition: 0.3s ease;
 }
 
@@ -35,8 +37,10 @@ h1 {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Before and After applying the active class */
 .faq.active::before,
 .faq.active::after {
+  /* Speech bubble FA icon */
   content: '\f075';
   font-family: 'Font Awesome 5 Free';
   color: #2ecc71;
